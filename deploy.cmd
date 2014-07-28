@@ -58,7 +58,7 @@ echo Handling Snow site deployment.
 echo Start - Building the Snow Site
 echo Running Snow.exe config=%DEPLOYMENT_SOURCE%\Snow\
 pushd %DEPLOYMENT_SOURCE%
-call :ExecuteCmd %DEPLOYMENT_SOURCE%\_compile\Snow.exe debug=true config=%DEPLOYMENT_SOURCE%\Snow\
+call :ExecuteCmd %DEPLOYMENT_SOURCE%\_compile\Snow.exe config=%DEPLOYMENT_SOURCE%\Snow\
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Finish - Building the Snow Site
 echo -----
